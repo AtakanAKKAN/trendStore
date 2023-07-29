@@ -3,7 +3,7 @@ import ProductItem from "./ProductItem";
 import "./Products.css";
 import { MyContext } from "../../Context/MyContext";
 import SearchBar from "./SearchBar";
-import { AiOutlineSearch } from "react-icons/Ai";
+// import { AiOutlineSearch } from "react-icons/Ai";
 import Button from "../UI/Button";
 
 const Products = () => {
@@ -13,11 +13,13 @@ const Products = () => {
     setSearchIsShow,
     filteredList,
     filtredListOpen,
+    setFiltredListOpen,
   } = useContext(MyContext);
 
   
   const searchBarOpenHandler = () => {
     setSearchIsShow(true);
+    setFiltredListOpen(false);
   };
 
   const productList = data.map((product) => (
@@ -34,7 +36,7 @@ const Products = () => {
         <SearchBar />
       ) : (
         <Button className="ürün-arama" onClick={searchBarOpenHandler}>
-          <AiOutlineSearch />
+          Ara
         </Button>
       )}
       {filtredListOpen ? (

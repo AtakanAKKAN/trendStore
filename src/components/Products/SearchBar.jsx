@@ -6,12 +6,13 @@ import "./SearchBar.Css";
 import Button from "../UI/Button";
 
 const SearchBar = () => {
-  const { searchIsShow, setSearchIsShow, filterBySearch, setFiltredListOpen } =
+  const {data, setSearchIsShow, filterBySearch, setFiltredListOpen,setFilteredList } =
     useContext(MyContext);
     
   const searchBarCloseHandler = () => {
     setSearchIsShow(false);
     setFiltredListOpen(true);
+    setFilteredList(data)
   };
 
   return (
@@ -19,14 +20,14 @@ const SearchBar = () => {
       <input type="search" className="input" onChange={filterBySearch} />
       <div className="buttons">
         <Button role="button">
-          <AiOutlineSearch />
+        Ara
         </Button>
         <Button
           className="button-3"
           role="button"
           onClick={searchBarCloseHandler}
         >
-          <AiOutlineClose />
+          Iptal
         </Button>
       </div>
     </div>
