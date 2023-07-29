@@ -9,7 +9,7 @@ const Hero = () => {
             <a href="/">Şimdi Keşfet</a>
         </div>
         <div className="hero-image-container">
-            <img src="/images/hero.png" alt="" className="hero-image" />
+            <img src="public/images/hero.png" alt="" className="hero-image" />
         </div>
     </section>
   )
