@@ -3,7 +3,6 @@ import ProductItem from "./ProductItem";
 import "./Products.css";
 import { MyContext } from "../../Context/MyContext";
 import SearchBar from "./SearchBar";
-// import { AiOutlineSearch } from "react-icons/Ai";
 import Button from "../UI/Button";
 
 const Products = () => {

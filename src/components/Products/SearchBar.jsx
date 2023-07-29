@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-import { AiOutlineSearch, AiOutlineClose } from "react-icons/Ai";
 import { useContext, useState } from "react";
 import { MyContext } from "../../Context/MyContext";
 import "./SearchBar.Css";
