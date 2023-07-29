@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { useContext, useState } from "react";
 import { MyContext } from "../../Context/MyContext";
-import "./SearchBar.Css";
+import "./SearchBar.css";
 import Button from "../UI/Button";
 
 const SearchBar = () => {
